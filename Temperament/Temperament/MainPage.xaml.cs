@@ -100,6 +100,52 @@ namespace Temperament
                    }
                 }
             };
+            var solContedPage = new ContentPage
+            {
+                Content = new StackLayout
+                {
+                    Children =
+                   {
+                       new Label
+                       {
+                           Text = "Тёмный солдат",//tekst
+                           FontSize = Device.GetNamedSize (NamedSize.Medium, typeof(Label)),
+                           HorizontalOptions = LayoutOptions.Center
+                       },
+                       new Image
+                       { Source = "soldat.jpg",
+                        WidthRequest = 500,
+                        HeightRequest = 500,
+                        HorizontalOptions = LayoutOptions.Center,
+                        VerticalOptions = LayoutOptions.CenterAndExpand
+                       }
+                   }
+                }
+            };
+            var szikContedPage = new ContentPage
+            {
+                Content = new StackLayout
+                {
+                    Children =
+                   {
+                       new Label
+                       {
+                           Text = "Штурмовик Сжигатель",//tekst
+                           FontSize = Device.GetNamedSize (NamedSize.Medium, typeof(Label)),
+                           HorizontalOptions = LayoutOptions.Center
+                       },
+                       new Image
+                       { Source = "szik.png",
+                        WidthRequest = 500,
+                        HeightRequest = 500,
+                        HorizontalOptions = LayoutOptions.Center,
+                        VerticalOptions = LayoutOptions.CenterAndExpand
+                       }
+                   }
+                }
+            };
+            Children.Add(solContedPage);
+            Children.Add(szikContedPage);
             Children.Add(inqContedPage);
             Children.Add(tenContedPage);
             Children.Add(smertContedPage);
